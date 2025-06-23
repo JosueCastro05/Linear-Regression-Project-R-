@@ -160,7 +160,7 @@ rmse <- sqrt(mean(err0.8^2))
 #mean absolute percentage error
 mape <- mean(abs(err0.8/test$Yearly.Amount.Spent))
 
-c(RMSE = rmse, mape=mape, R2 =summary(lm.fit0.8)$r.squared)
+c(RMSE = rmse, mape=mape, R2 =summary(multi.lm.fit0.8)$r.squared)
 
 
 
